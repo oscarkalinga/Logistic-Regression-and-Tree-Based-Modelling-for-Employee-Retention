@@ -14,6 +14,7 @@ Logistic regression and Tree-based modellings like the decision tree and random 
 
 ## Confusion matrix of the logistic regression
 ![image](https://github.com/oscarkalinga/Logistic-Regression-and-Tree-Based-Modelling-for-Employee-Retention/assets/73540285/359e1369-2c71-494c-8768-9b55047eb9b1)
+
 The upper-left quadrant displays the number of true negatives. The upper-right quadrant displays the number of false positives. The bottom-left quadrant displays the number of false negatives. The bottom-right quadrant displays the number of true positives.
 - True negatives: The number of people who did not leave that the model accurately predicted did not leave.
 - False positives: The number of people who did not leave the model inaccurately predicted as leaving.
@@ -34,17 +35,18 @@ The barplot above shows that in this decision tree model, last_evaluation, numbe
 The plot above shows that in this random forest model, last_evaluation, number_project, tenure, and overworked have the highest importance, in that order. These variables are most helpful in predicting the outcome variable, left, and they are the same as the ones used by the decision tree model.
 
 # Conclusion
-The models and the feature importances extracted from the models confirm that employees at the company are overworked.
+The models and the feature importances extracted from the models confirm that employees at the company are overworked. `last_evaluation`, `tenure`, `number_project`, `overworked`, `salary_low`, and `work_accident` have the highest importance. These variables are most helpful in predicting the outcome variable, `left`.
+
 
 # Recommendations
-To retain employees, the following are the recommendations to the stakeholders:
-Cap the number of projects that employees can work on.
-Consider promoting employees who have been with the company for at least four years, or conduct a further investigation about why four-year tenured employees are so dissatisfied.
-Either reward employees for working longer hours, or don't require them to do so.
-If employees aren't familiar with the company's overtime pay policies, inform them about this. If the expectations around workload and time off aren't explicit, make them clear.
-Hold company-wide and within-team discussions to understand and address the company work culture, across the board and in specific contexts.
-High evaluation scores should not be reserved for employees who work 200+ hours per month. Consider a proportionate scale for rewarding employees who contribute more/put in more effort.
+- To retain employees, the following are the recommendations to the stakeholders:
+- Cap the number of projects that employees can work on.
+- Consider promoting employees who have been with the company for at least four years, or conduct a further investigation about why four-year tenured employees are so dissatisfied.
+- Either reward employees for working longer hours, or don't require them to do so.
+- If employees aren't familiar with the company's overtime pay policies, inform them about this. If the expectations around workload and time off aren't explicit, make them clear.
+- Hold company-wide and within-team discussions to understand and address the company work culture, across the board and in specific contexts.
+- High evaluation scores should not be reserved for employees who work 200+ hours per month. Consider a proportionate scale for rewarding employees who contribute more/put in more effort.
 
 # Next Steps
-It may be justified to still have some concern about data leakage. It could be prudent to consider how predictions change when last_evaluation is removed from the data. It's possible that evaluations aren't performed very frequently, in which case it would be useful to be able to predict employee retention without this feature. It's also possible that the evaluation score determines whether an employee leaves or stays, in which case it could be useful to pivot and try to predict performance score. The same could be said for satisfaction score.
+It may be justified to still have some concerns about data leakage. It could be prudent to consider how predictions change when last_evaluation is removed from the data. It's possible that evaluations aren't performed very frequently, in which case it would be useful to be able to predict employee retention without this feature. It's also possible that the evaluation score determines whether an employee leaves or stays, in which case it could be useful to pivot and try to predict performance score. The same could be said for satisfaction scores.
 
