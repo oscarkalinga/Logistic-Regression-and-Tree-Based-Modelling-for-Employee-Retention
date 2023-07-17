@@ -30,6 +30,7 @@ The model predicted more false positives than false negatives, which means that 
 ![image](https://github.com/oscarkalinga/Logistic-Regression-and-Tree-Based-Modelling-for-Employee-Retention/assets/73540285/8554bf65-2297-41ec-86d4-9b244bc41235)
 
 The barplot above shows that in this decision tree model, last_evaluation, number_project, tenure, and overworked have the highest importance, in that order. These variables are most helpful in predicting the outcome variable, left.
+
 ![image](https://github.com/oscarkalinga/Logistic-Regression-and-Tree-Based-Modelling-for-Employee-Retention/assets/73540285/eb71b6e3-d437-4cc2-9c2a-2d712d214ead)
 
 The plot above shows that in this random forest model, last_evaluation, number_project, tenure, and overworked have the highest importance, in that order. These variables are most helpful in predicting the outcome variable, left, and they are the same as the ones used by the decision tree model.
